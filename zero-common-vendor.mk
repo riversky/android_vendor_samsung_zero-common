@@ -34,6 +34,7 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/etc/firmware/clearwatera-dsp4-rx-anc-wb.wmfw:system/etc/firmware/clearwatera-dsp4-rx-anc-wb.wmfw \
     $(BLOB_PATH)/etc/firmware/clearwatera-dsp5-dsm.wmfw:system/etc/firmware/clearwatera-dsp5-dsm.wmfw \
     $(BLOB_PATH)/etc/firmware/clearwatera-dsp6-ez2-control.wmfw:system/etc/firmware/clearwatera-dsp6-ez2-control.wmfw \
+    $(BLOB_PATH)/etc/firmware/clearwaterc-dsp1-trace.wmfw:system/etc/firmware/clearwaterc-dsp1-trace.wmfw \
     $(BLOB_PATH)/etc/firmware/clearwaterc-dsp2-tx-nb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-nb.wmfw \
     $(BLOB_PATH)/etc/firmware/clearwaterc-dsp2-tx-swb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-swb.wmfw \
     $(BLOB_PATH)/etc/firmware/clearwaterc-dsp2-tx-wb.wmfw:system/etc/firmware/clearwaterc-dsp2-tx-wb.wmfw \
@@ -72,9 +73,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    $(BLOB_PATH)/vendor/firmware/bcm4358A3_V0069.0109_semco.hcd:system/vendor/firmware/bcm4358A3_V0069.0109_semco.hcd \
-    $(BLOB_PATH)/vendor/firmware/bcm4358A3_V0069.0109_murata.hcd:system/vendor/firmware/bcm4358A3_V0069.0109_murata.hcd \
-    $(BLOB_PATH)/vendor/firmware/bcm4358A3_V0069.0109_wisol.hcd:system/vendor/firmware/bcm4358A3_V0069.0109_wisol.hcd
+    $(BLOB_PATH)/vendor/firmware/bcm4358A3_V0083.0138_semco.hcd:system/vendor/firmware/bcm4358A3_V0083.0138_semco.hcd \
+    $(BLOB_PATH)/vendor/firmware/bcm4358A3_V0083.0138_murata.hcd:system/vendor/firmware/bcm4358A3_V0083.0138_murata.hcd \
+    $(BLOB_PATH)/vendor/firmware/bcm4358A3_V0083.0138_wisol.hcd:system/vendor/firmware/bcm4358A3_V0083.0138_wisol.hcd
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -113,6 +114,7 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/vendor/firmware/ois_fw_sec.bin:system/vendor/firmware/ois_fw_sec.bin \
     $(BLOB_PATH)/vendor/firmware/setfile_2p2.bin:system/vendor/firmware/setfile_2p2.bin \
     $(BLOB_PATH)/vendor/firmware/setfile_4e6.bin:system/vendor/firmware/setfile_4e6.bin \
+    $(BLOB_PATH)/vendor/firmware/setfile_6b2.bin:system/vendor/firmware/setfile_6b2.bin \
     $(BLOB_PATH)/vendor/firmware/setfile_imx240.bin:system/vendor/firmware/setfile_imx240.bin
 
 # Fingerprint
@@ -210,7 +212,7 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/etc/wifi/nvram_net.txt_wisol_a1:system/etc/wifi/nvram_net.txt_wisol_a1 \
     $(BLOB_PATH)/etc/wifi/nvram_net.txt_wisol_b85_a1:system/etc/wifi/nvram_net.txt_wisol_b85_a1
 
-#OMX
+# OMX
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
     $(BLOB_PATH)/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
