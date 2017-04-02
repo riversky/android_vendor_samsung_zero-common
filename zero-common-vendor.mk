@@ -170,6 +170,29 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
     $(BLOB_PATH)/vendor/firmware/sec_s3fwrn5p_firmware.bin:system/vendor/firmware/sec_s3fwrn5p_firmware.bin
 
+# OMX
+PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
+    $(BLOB_PATH)/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
+    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so
+
 # Radio
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
@@ -206,6 +229,12 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_murata:system/etc/wifi/nvram_mfg.txt_murata \
     $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_murata_a1:system/etc/wifi/nvram_mfg.txt_murata_a1 \
     $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_murata_b85_a1:system/etc/wifi/nvram_mfg.txt_murata_b85_a1 \
+    $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_semco:system/etc/wifi/nvram_mfg.txt_semco \
+    $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_semco_a1:system/etc/wifi/nvram_mfg.txt_semco_a1 \
+    $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_semco_b85_a1:system/etc/wifi/nvram_mfg.txt_semco_b85_a1 \
+    $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_semco3rd:system/etc/wifi/nvram_mfg.txt_semco3rd \
+    $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_semco3rd_a1:system/etc/wifi/nvram_mfg.txt_semco3rd_a1 \
+    $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_semco3rd_b85_a1:system/etc/wifi/nvram_mfg.txt_semco3rd_b85_a1 \
     $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_wisol:system/etc/wifi/nvram_mfg.txt_wisol \
     $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_wisol_a1:system/etc/wifi/nvram_mfg.txt_wisol_a1 \
     $(BLOB_PATH)/etc/wifi/nvram_mfg.txt_wisol_b85_a1:system/etc/wifi/nvram_mfg.txt_wisol_b85_a1 \
@@ -215,29 +244,12 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/etc/wifi/nvram_net.txt_murata:system/etc/wifi/nvram_net.txt_murata \
     $(BLOB_PATH)/etc/wifi/nvram_net.txt_murata_a1:system/etc/wifi/nvram_net.txt_murata_a1 \
     $(BLOB_PATH)/etc/wifi/nvram_net.txt_murata_b85_a1:system/etc/wifi/nvram_net.txt_murata_b85_a1 \
+    $(BLOB_PATH)/etc/wifi/nvram_net.txt_semco:system/etc/wifi/nvram_net.txt_semco \
+    $(BLOB_PATH)/etc/wifi/nvram_net.txt_semco_a1:system/etc/wifi/nvram_net.txt_semco_a1 \
+    $(BLOB_PATH)/etc/wifi/nvram_net.txt_semco_b85_a1:system/etc/wifi/nvram_net.txt_semco_b85_a1 \
+    $(BLOB_PATH)/etc/wifi/nvram_net.txt_semco3rd:system/etc/wifi/nvram_net.txt_semco3rd \
+    $(BLOB_PATH)/etc/wifi/nvram_net.txt_semco3rd_a1:system/etc/wifi/nvram_net.txt_semco3rd_a1 \
+    $(BLOB_PATH)/etc/wifi/nvram_net.txt_semco3rd_b85_a1:system/etc/wifi/nvram_net.txt_semco3rd_b85_a1 \
     $(BLOB_PATH)/etc/wifi/nvram_net.txt_wisol:system/etc/wifi/nvram_net.txt_wisol \
     $(BLOB_PATH)/etc/wifi/nvram_net.txt_wisol_a1:system/etc/wifi/nvram_net.txt_wisol_a1 \
     $(BLOB_PATH)/etc/wifi/nvram_net.txt_wisol_b85_a1:system/etc/wifi/nvram_net.txt_wisol_b85_a1
-
-# OMX
-PRODUCT_COPY_FILES += \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
-    $(BLOB_PATH)/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
-    $(BLOB_PATH)/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so
