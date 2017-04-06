@@ -204,7 +204,7 @@ PRODUCT_COPY_FILES += \
 
 # Security
 PRODUCT_COPY_FILES += \
-    $(BLOB_PATH)/app/mcRegistry/ffffffffd0000000000000000000000a.drbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.drbin
+    $(BLOB_PATH)/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
 
 # Sensors
 PRODUCT_COPY_FILES += \
