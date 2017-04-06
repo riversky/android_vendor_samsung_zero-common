@@ -202,6 +202,10 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(BLOB_PATH)/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so
 
+# Security
+PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/app/mcRegistry/ffffffffd0000000000000000000000a.drbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.drbin
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
