@@ -165,10 +165,11 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_COPY_FILES += \
-    $(BLOB_PATH)/etc/sec_s3fwrn5p_rfreg.bin:system/etc/sec_s3fwrn5p_rfreg.bin \
+    $(BLOB_PATH)/etc/nfc/sec_s3fwrn5p_rfreg.bin:system/etc/nfc/sec_s3fwrn5p_rfreg.bin \
+    $(BLOB_PATH)/etc/nfc/THL/sec_s3fwrn5p_rfreg.bin:system/etc/nfc/THL/sec_s3fwrn5p_rfreg.bin \
     $(BLOB_PATH)/lib/hw/nfc_nci.universal7420.so:system/lib/hw/nfc_nci.universal7420.so \
     $(BLOB_PATH)/lib64/hw/nfc_nci.universal7420.so:system/lib64/hw/nfc_nci.universal7420.so \
-    $(BLOB_PATH)/vendor/firmware/sec_s3fwrn5p_firmware.bin:system/vendor/firmware/sec_s3fwrn5p_firmware.bin
+    $(BLOB_PATH)/vendor/firmware/nfc/sec_s3fwrn5p_firmware.bin:system/vendor/firmware/nfc/sec_s3fwrn5p_firmware.bin
 
 # OMX
 PRODUCT_COPY_FILES += \
