@@ -225,7 +225,7 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
     $(BLOB_PATH)/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
     $(BLOB_PATH)/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-    $(BLOB_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \	
+    $(BLOB_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
     $(BLOB_PATH)/lib64/libsomx263dsw.so:system/lib64/libsomx263dsw.so \
     $(BLOB_PATH)/lib64/libsomx264dsw.so:system/lib64/libsomx264dsw.so \
     $(BLOB_PATH)/lib64/libsomxaacd.so:system/lib64/libsomxaacd.so \
