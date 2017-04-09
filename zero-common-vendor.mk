@@ -136,8 +136,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
     $(BLOB_PATH)/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
+    $(BLOB_PATH)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    $(BLOB_PATH)/vendor/lib/libOpenCv.so:system/vendor/lib/libOpenCv.so \
     $(BLOB_PATH)/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
-    $(BLOB_PATH)/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so
+    $(BLOB_PATH)/vendor/lib/hw/vulkan.exynos5.so:system/vendor/lib/hw/vulkan.exynos5.so \
+    $(BLOB_PATH)/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
+    $(BLOB_PATH)/vendor/lib64/libOpenCv.so:system/vendor/lib64/libOpenCv.so \
+    $(BLOB_PATH)/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
+    $(BLOB_PATH)/vendor/lib64/hw/vulkan.exynos5.so:system/vendor/lib64/hw/vulkan.exynos5.so
 
 # GPS
 PRODUCT_COPY_FILES += \
