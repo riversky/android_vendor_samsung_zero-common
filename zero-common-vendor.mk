@@ -254,9 +254,11 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    $(BLOB_PATH)/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
     $(BLOB_PATH)/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
+    $(BLOB_PATH)/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    $(BLOB_PATH)/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
     $(BLOB_PATH)/lib64/libsec-ril-dsds.so:system/lib64/libsec-ril-dsds.so \
+    $(BLOB_PATH)/lib64/libsecril-client.so:system/lib64/libsecril-client.so \
     $(BLOB_PATH)/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     $(BLOB_PATH)/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so
 
