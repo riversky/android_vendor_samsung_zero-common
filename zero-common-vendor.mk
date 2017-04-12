@@ -285,6 +285,9 @@ PRODUCT_COPY_FILES += \
 
 # Graphics
 PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
+    $(BLOB_PATH)/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+    $(BLOB_PATH)/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     $(BLOB_PATH)/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
     $(BLOB_PATH)/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
     $(BLOB_PATH)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
