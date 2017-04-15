@@ -124,6 +124,10 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/vendor/firmware/setfile_6b2.bin:system/vendor/firmware/setfile_6b2.bin \
     $(BLOB_PATH)/vendor/firmware/setfile_imx240.bin:system/vendor/firmware/setfile_imx240.bin
 
+# CPBoot Daemon
+PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/sbin/cbd:root/sbin/cbd
+
 # ConsumerIR
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/hw/consumerir.exynos5.so:system/lib/hw/consumerir.exynos5.so \
