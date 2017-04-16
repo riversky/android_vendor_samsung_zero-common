@@ -104,11 +104,18 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
     $(BLOB_PATH)/lib/libuniplugin.so:system/lib/libuniplugin.so \
     $(BLOB_PATH)/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
-    $(BLOB_PATH)/lib/libexif.so:system/lib/libexif.so \
-    $(BLOB_PATH)/lib64/libexif.so:system/lib64/libexif.so \
-    $(BLOB_PATH)/lib/libexifa.so:system/lib/libexifa.so \
-    $(BLOB_PATH)/lib64/libexifa.so:system/lib64/libexifa.so \
-    $(BLOB_PATH)/lib64/libsdid.so:system/lib64/libsdid.so \
+    $(BLOB_PATH)/lib/libcsc.so:system/lib/libcsc.so \
+    $(BLOB_PATH)/lib64/libcsc.so:system/lib64/libcsc.so \
+    $(BLOB_PATH)/lib/libexynosgscaler.so:system/lib/libexynosgscaler.so \
+    $(BLOB_PATH)/lib64/libexynosgscaler.so:system/lib64/libexynosgscaler.so \
+    $(BLOB_PATH)/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
+    $(BLOB_PATH)/lib64/libexynosscaler.so:system/lib64/libexynosscaler.so \
+    $(BLOB_PATH)/lib64/libagc_max.so:system/lib64/libagc_max.so \
+    $(BLOB_PATH)/lib64/libmaxflicker.so:system/lib64/libmaxflicker.so \
+    $(BLOB_PATH)/lib64/libsdid.so:system/lib64/libsdid.so
+
+# Media
+PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/vendor/firmware/companion_2p2_master_setfile.bin:system/vendor/firmware/companion_2p2_master_setfile.bin \
     $(BLOB_PATH)/vendor/firmware/companion_2p2_mode_setfile.bin:system/vendor/firmware/companion_2p2_mode_setfile.bin \
     $(BLOB_PATH)/vendor/firmware/companion_fw_2p2_evt1.bin:system/vendor/firmware/companion_fw_2p2_evt1.bin \
@@ -164,6 +171,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/bin/gps.cer:system/bin/gps.cer \
     $(BLOB_PATH)/bin/gpsd:system/bin/gpsd \
     $(BLOB_PATH)/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     $(BLOB_PATH)/lib/libwrappergps.so:system/lib/libwrappergps.so \
@@ -394,16 +402,19 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/lib64/libhr.so:system/lib64/libhr.so \
     $(BLOB_PATH)/lib/hw/sensors.universal7420.so:system/lib/hw/sensors.universal7420.so \
     $(BLOB_PATH)/lib64/hw/sensors.universal7420.so:system/lib64/hw/sensors.universal7420.so \
+    $(BLOB_PATH)/lib/hw/sensorhubs.universal7420.so:system/lib/hw/sensorhubs.universal7420.so \
+    $(BLOB_PATH)/lib64/hw/sensorhubs.universal7420.so:system/lib64/hw/sensorhubs.universal7420.so \
+    $(BLOB_PATH)/lib/libsensorservice.so:system/lib/libsensorservice.so \
+    $(BLOB_PATH)/lib64/libsensorservice.so:system/lib64/libsensorservice.so \
     $(BLOB_PATH)/bin/bcm_sensorhub_a2.patch:system/bin/bcm_sensorhub_a2.patch \
     $(BLOB_PATH)/bin/lhd:system/bin/lhd
 
 # Widevine
 PRODUCT_COPY_FILES += \
-    $(BLOB_PATH)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    $(BLOB_PATH)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
-    $(BLOB_PATH)/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+    $(BLOB_PATH)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 # Wifi
 PRODUCT_COPY_FILES += \
