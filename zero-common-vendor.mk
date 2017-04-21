@@ -140,7 +140,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/hw/consumerir.exynos5.so:system/lib/hw/consumerir.exynos5.so \
     $(BLOB_PATH)/lib64/hw/consumerir.exynos5.so:system/lib64/hw/consumerir.exynos5.so \
-	
+
+# DRM
+PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+    $(BLOB_PATH)/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so
+
 # Fingerprint
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/app/mcRegistry/ffffffff00000000000000000000000e.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000e.tlbin \
