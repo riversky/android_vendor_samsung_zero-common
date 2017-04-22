@@ -423,7 +423,7 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
     $(BLOB_PATH)/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
     $(BLOB_PATH)/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-    $(BLOB_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \	
+    $(BLOB_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
     $(BLOB_PATH)/lib64/libarac.so:system/lib64/libarac.so \
     $(BLOB_PATH)/lib64/libsavsac.so:system/lib64/libsavsac.so \
     $(BLOB_PATH)/lib64/libsavscmn.so:system/lib64/libsavscmn.so \
