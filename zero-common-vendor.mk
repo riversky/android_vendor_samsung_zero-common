@@ -358,6 +358,13 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     $(BLOB_PATH)/vendor/lib/libLifevibes_lvverx.so:system/vendor/lib/libLifevibes_lvverx.so
 
+# OMX Core
+PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/lib/libExynosOMX_Core.so:system/lib/libExynosOMX_Core.so \
+    $(BLOB_PATH)/lib/libExynosOMX_Resourcemanager.so:system/lib/libExynosOMX_Resourcemanager.so \
+    $(BLOB_PATH)/lib64/libExynosOMX_Core.so:system/lib64/libExynosOMX_Core.so \
+    $(BLOB_PATH)/lib64/libExynosOMX_Resourcemanager.so:system/lib64/libExynosOMX_Resourcemanager.so
+
 # OMX
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
@@ -380,6 +387,77 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
     $(BLOB_PATH)/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
     $(BLOB_PATH)/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so
+
+# SOMX
+PRODUCT_COPY_FILES += \
+    $(BLOB_PATH)/etc/somxreg.conf:system/etc/somxreg.conf \
+    $(BLOB_PATH)/lib/libarac.so:system/lib/libarac.so \
+    $(BLOB_PATH)/lib/libsavsac.so:system/lib/libsavsac.so \
+    $(BLOB_PATH)/lib/libsavscmn.so:system/lib/libsavscmn.so \
+    $(BLOB_PATH)/lib/libsavsff.so:system/lib/libsavsff.so \
+    $(BLOB_PATH)/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
+    $(BLOB_PATH)/lib/libsavsvc.so:system/lib/libsavsvc.so \
+    $(BLOB_PATH)/lib/libsnaace.so:system/lib/libsnaace.so \
+    $(BLOB_PATH)/lib/libsnamrnb.so:system/lib/libsnamrnb.so \
+    $(BLOB_PATH)/lib/libsnamrwb.so:system/lib/libsnamrwb.so \
+    $(BLOB_PATH)/lib/libsomx263dsw.so:system/lib/libsomx263dsw.so \
+    $(BLOB_PATH)/lib/libsomx264dsw.so:system/lib/libsomx264dsw.so \
+    $(BLOB_PATH)/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
+    $(BLOB_PATH)/lib/libsomxaace.so:system/lib/libsomxaace.so \
+    $(BLOB_PATH)/lib/libsomxadpcmd.so:system/lib/libsomxadpcmd.so \
+    $(BLOB_PATH)/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
+    $(BLOB_PATH)/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
+    $(BLOB_PATH)/lib/libsomxcore.so:system/lib/libsomxcore.so \
+    $(BLOB_PATH)/lib/libsomxevrcd.so:system/lib/libsomxevrcd.so \
+    $(BLOB_PATH)/lib/libsomxevrce.so:system/lib/libsomxevrce.so \
+    $(BLOB_PATH)/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
+    $(BLOB_PATH)/lib/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
+    $(BLOB_PATH)/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
+    $(BLOB_PATH)/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
+    $(BLOB_PATH)/lib/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
+    $(BLOB_PATH)/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
+    $(BLOB_PATH)/lib/libsomxqcelpd.so:system/lib/libsomxqcelpd.so \
+    $(BLOB_PATH)/lib/libsomxqcelpe.so:system/lib/libsomxqcelpe.so \
+    $(BLOB_PATH)/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
+    $(BLOB_PATH)/lib/libsomxvc1dsw.so:system/lib/libsomxvc1dsw.so \
+    $(BLOB_PATH)/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
+    $(BLOB_PATH)/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
+    $(BLOB_PATH)/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
+    $(BLOB_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \	
+    $(BLOB_PATH)/lib64/libarac.so:system/lib64/libarac.so \
+    $(BLOB_PATH)/lib64/libsavsac.so:system/lib64/libsavsac.so \
+    $(BLOB_PATH)/lib64/libsavscmn.so:system/lib64/libsavscmn.so \
+    $(BLOB_PATH)/lib64/libsavsff.so:system/lib64/libsavsff.so \
+    $(BLOB_PATH)/lib64/libsavsmeta.so:system/lib64/libsavsmeta.so \
+    $(BLOB_PATH)/lib64/libsavsvc.so:system/lib64/libsavsvc.so \
+    $(BLOB_PATH)/lib64/libsnaace.so:system/lib64/libsnaace.so \
+    $(BLOB_PATH)/lib64/libsnamrnb.so:system/lib64/libsnamrnb.so \
+    $(BLOB_PATH)/lib64/libsnamrwb.so:system/lib64/libsnamrwb.so \
+    $(BLOB_PATH)/lib64/libsomx263dsw.so:system/lib64/libsomx263dsw.so \
+    $(BLOB_PATH)/lib64/libsomx264dsw.so:system/lib64/libsomx264dsw.so \
+    $(BLOB_PATH)/lib64/libsomxaacd.so:system/lib64/libsomxaacd.so \
+    $(BLOB_PATH)/lib64/libsomxaace.so:system/lib64/libsomxaace.so \
+    $(BLOB_PATH)/lib64/libsomxadpcmd.so:system/lib64/libsomxadpcmd.so \
+    $(BLOB_PATH)/lib64/libsomxamrd.so:system/lib64/libsomxamrd.so \
+    $(BLOB_PATH)/lib64/libsomxcmn.so:system/lib64/libsomxcmn.so \
+    $(BLOB_PATH)/lib64/libsomxcore.so:system/lib64/libsomxcore.so \
+    $(BLOB_PATH)/lib64/libsomxevrcd.so:system/lib64/libsomxevrcd.so \
+    $(BLOB_PATH)/lib64/libsomxevrce.so:system/lib64/libsomxevrce.so \
+    $(BLOB_PATH)/lib64/libsomxflacd.so:system/lib64/libsomxflacd.so \
+    $(BLOB_PATH)/lib64/libsomxhevcdsw.so:system/lib64/libsomxhevcdsw.so \
+    $(BLOB_PATH)/lib64/libsomxmp3d.so:system/lib64/libsomxmp3d.so \
+    $(BLOB_PATH)/lib64/libsomxmp43d.so:system/lib64/libsomxmp43d.so \
+    $(BLOB_PATH)/lib64/libsomxmp4vdsw.so:system/lib64/libsomxmp4vdsw.so \
+    $(BLOB_PATH)/lib64/libsomxnaace.so:system/lib64/libsomxnaace.so \
+    $(BLOB_PATH)/lib64/libsomxqcelpd.so:system/lib64/libsomxqcelpd.so \
+    $(BLOB_PATH)/lib64/libsomxqcelpe.so:system/lib64/libsomxqcelpe.so \
+    $(BLOB_PATH)/lib64/libsomxsr263d.so:system/lib64/libsomxsr263d.so \
+    $(BLOB_PATH)/lib64/libsomxvc1dsw.so:system/lib64/libsomxvc1dsw.so \
+    $(BLOB_PATH)/lib64/libsomxvp8d.so:system/lib64/libsomxvp8d.so \
+    $(BLOB_PATH)/lib64/libsomxwmad.so:system/lib64/libsomxwmad.so \
+    $(BLOB_PATH)/lib64/libsomxwmv7d.so:system/lib64/libsomxwmv7d.so \
+    $(BLOB_PATH)/lib64/libsomxwmv8d.so:system/lib64/libsomxwmv8d.so \
+    $(BLOB_PATH)/lib64/libsxqk.so:system/lib64/libsxqk.so
 
 # Radio
 PRODUCT_COPY_FILES += \
