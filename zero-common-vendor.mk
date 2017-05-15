@@ -133,8 +133,10 @@ PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/vendor/firmware/setfile_imx240.bin:system/vendor/firmware/setfile_imx240.bin
 
 # CPBoot Daemon
+ifeq ($(DEVICE_PROVIDES_CUSTOM_CBD),)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sbin/cbd:root/sbin/cbd
+endif
 
 # ConsumerIR
 PRODUCT_COPY_FILES += \
