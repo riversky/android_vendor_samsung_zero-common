@@ -152,11 +152,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(BLOB_PATH)/app/mcRegistry/ffffffff00000000000000000000000e.tlbin:system/app/mcRegistry/ffffffff00000000000000000000000e.tlbin \
     $(BLOB_PATH)/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin \
-    $(BLOB_PATH)/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
+    $(BLOB_PATH)/bin/fingerprintd:system/bin/fingerprintd \
+	$(BLOB_PATH)/lib64/libbauthserver.so:system/lib64/libbauthserver.so \
     $(BLOB_PATH)/lib64/libbauthtzcommon.so:system/lib64/libbauthtzcommon.so \
     $(BLOB_PATH)/lib64/libsynaFpSensorTestNwd.so:system/lib64/libsynaFpSensorTestNwd.so \
     $(BLOB_PATH)/lib64/libegis_fp_normal_sensor_test.so:system/lib64/libegis_fp_normal_sensor_test.so \
-    $(BLOB_PATH)/lib64/hw/fingerprint.vendor.exynos5.so:system/lib64/hw/fingerprint.vendor.exynos5.so
+    $(BLOB_PATH)/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so
 
 # Graphics
 PRODUCT_COPY_FILES += \
