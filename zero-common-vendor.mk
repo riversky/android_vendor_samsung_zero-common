@@ -464,10 +464,6 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_COPY_FILES += \
-    $(BLOB_PATH)/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    $(BLOB_PATH)/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
-    $(BLOB_PATH)/lib/libril.so:system/lib/libril.so \
-    $(BLOB_PATH)/lib64/libril.so:system/lib64/libril.so \
     $(BLOB_PATH)/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(BLOB_PATH)/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
     $(BLOB_PATH)/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
