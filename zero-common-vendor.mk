@@ -475,8 +475,7 @@ PRODUCT_COPY_FILES += \
 
 # Security
 PRODUCT_COPY_FILES += \
-    $(BLOB_PATH)/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
-    $(BLOB_PATH)/lib/liboemcrypto.so:system/lib/liboemcrypto.so
+    $(BLOB_PATH)/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
 
 # Sensors
 PRODUCT_COPY_FILES += \
