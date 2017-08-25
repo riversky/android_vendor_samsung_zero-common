@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/system/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
     $(LOCAL_PATH)/system/vendor/firmware/bcm4358A3_V0083.0138_semco.hcd:system/vendor/firmware/bcm4358A3_V0083.0138_semco.hcd \
     $(LOCAL_PATH)/system/vendor/firmware/bcm4358A3_V0083.0138_murata.hcd:system/vendor/firmware/bcm4358A3_V0083.0138_murata.hcd \
     $(LOCAL_PATH)/system/vendor/firmware/bcm4358A3_V0083.0138_wisol.hcd:system/vendor/firmware/bcm4358A3_V0083.0138_wisol.hcd
