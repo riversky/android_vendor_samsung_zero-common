@@ -459,11 +459,6 @@ PRODUCT_COPY_FILES += \
 
 # Radio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/bin/rild:system/bin/rild \
-    $(LOCAL_PATH)/system/lib/libreference-ril.so:system/lib/libreference-ril.so \
-    $(LOCAL_PATH)/system/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
-    $(LOCAL_PATH)/system/lib/libril.so:system/lib/libril.so \
-    $(LOCAL_PATH)/system/lib64/libril.so:system/lib64/libril.so \
     $(LOCAL_PATH)/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/system/lib64/libsec-ril.so:system/lib64/libsec-ril.so \
     $(LOCAL_PATH)/system/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
