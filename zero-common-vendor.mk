@@ -469,7 +469,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
     $(LOCAL_PATH)/system/lib64/libsec-ril-dsds.so:system/lib64/libsec-ril-dsds.so \
     $(LOCAL_PATH)/system/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    $(LOCAL_PATH)/system/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so
+    $(LOCAL_PATH)/system/lib64/libsecnativefeature.so:system/lib64/libsecnativefeature.so \
+    $(LOCAL_PATH)/system/lib/libprotobuf-cpp-shim.so:system/lib/libprotobuf-cpp-shim.so \
+    $(LOCAL_PATH)/system/lib64/libprotobuf-cpp-shim.so:system/lib64/libprotobuf-cpp-shim.so
 
 # Security
 PRODUCT_COPY_FILES += \
