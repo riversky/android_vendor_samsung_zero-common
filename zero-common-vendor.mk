@@ -354,36 +354,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     $(LOCAL_PATH)/system/vendor/lib/libLifevibes_lvverx.so:system/vendor/lib/libLifevibes_lvverx.so
 
-# OMX Core
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/lib/libExynosOMX_Core.so:system/lib/libExynosOMX_Core.so \
-    $(LOCAL_PATH)/system/lib/libExynosOMX_Resourcemanager.so:system/lib/libExynosOMX_Resourcemanager.so \
-    $(LOCAL_PATH)/system/lib64/libExynosOMX_Core.so:system/lib64/libExynosOMX_Core.so \
-    $(LOCAL_PATH)/system/lib64/libExynosOMX_Resourcemanager.so:system/lib64/libExynosOMX_Resourcemanager.so
-
-# OMX
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.AVC.Encoder.so:system/lib/omx/libOMX.Exynos.AVC.Encoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib/omx/libOMX.Exynos.HEVC.Decoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
-    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.AVC.Decoder.so:system/lib64/omx/libOMX.Exynos.AVC.Decoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.AVC.Encoder.so:system/lib64/omx/libOMX.Exynos.AVC.Encoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Decoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Decoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so:system/lib64/omx/libOMX.Exynos.MPEG4.Encoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.VP8.Decoder.so:system/lib64/omx/libOMX.Exynos.VP8.Decoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
-    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so
-
 # SOMX
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/etc/somxreg.conf:system/etc/somxreg.conf \
