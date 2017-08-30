@@ -353,6 +353,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     $(LOCAL_PATH)/system/vendor/lib/libLifevibes_lvverx.so:system/vendor/lib/libLifevibes_lvverx.so
 
+# OMX
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib/omx/libOMX.Exynos.HEVC.Encoder.so \
+    $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.VP9.Decoder.so:system/lib/omx/libOMX.Exynos.VP9.Decoder.so \
+    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so:system/lib64/omx/libOMX.Exynos.HEVC.Encoder.so \
+    $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so
+
 # Radio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib/libsec-ril.so:system/lib/libsec-ril.so \
