@@ -173,7 +173,6 @@ PRODUCT_COPY_FILES += \
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/bin/gps.cer:system/bin/gps.cer \
-    $(LOCAL_PATH)/system/bin/gpsd:system/bin/gpsd \
     $(LOCAL_PATH)/system/lib64/hw/gps.default.so:system/lib64/hw/gps.default.so \
     $(LOCAL_PATH)/system/lib/libwrappergps.so:system/lib/libwrappergps.so \
     $(LOCAL_PATH)/system/lib64/libwrappergps.so:system/lib64/libwrappergps.so \
