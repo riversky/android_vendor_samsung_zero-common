@@ -102,8 +102,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
     $(LOCAL_PATH)/system/lib/libuniplugin.so:system/lib/libuniplugin.so \
     $(LOCAL_PATH)/system/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
-    $(LOCAL_PATH)/system/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
-    $(LOCAL_PATH)/system/lib64/libexynosscaler.so:system/lib64/libexynosscaler.so \
     $(LOCAL_PATH)/system/lib64/libagc_max.so:system/lib64/libagc_max.so \
     $(LOCAL_PATH)/system/lib64/libmaxflicker.so:system/lib64/libmaxflicker.so \
     $(LOCAL_PATH)/system/lib64/libsdid.so:system/lib64/libsdid.so
