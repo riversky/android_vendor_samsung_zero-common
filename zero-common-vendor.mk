@@ -91,8 +91,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
     $(LOCAL_PATH)/system/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(LOCAL_PATH)/system/lib64/libexynoscamera.so:system/lib64/libexynoscamera.so \
-    $(LOCAL_PATH)/system/lib/libexynosv4l2.so:system/lib/libexynosv4l2.so \
-    $(LOCAL_PATH)/system/lib64/libexynosv4l2.so:system/lib64/libexynosv4l2.so \
     $(LOCAL_PATH)/system/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     $(LOCAL_PATH)/system/lib64/libhwjpeg.so:system/lib64/libhwjpeg.so \
     $(LOCAL_PATH)/system/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
