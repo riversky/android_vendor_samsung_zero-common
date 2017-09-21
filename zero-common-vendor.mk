@@ -170,11 +170,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib/libfloatingfeature.so:system/lib/libfloatingfeature.so \
     $(LOCAL_PATH)/system/lib64/libfloatingfeature.so:system/lib64/libfloatingfeature.so
 
-# Memory
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/lib/libion.so:system/lib/libion.so \
-    $(LOCAL_PATH)/system/lib64/libion.so:system/lib64/libion.so
-
 # Mobicore
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/app/FFFFFFFF000000000000000000000001.drbin:system/app/FFFFFFFF000000000000000000000001.drbin \
