@@ -102,8 +102,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
     $(LOCAL_PATH)/system/lib/libuniplugin.so:system/lib/libuniplugin.so \
     $(LOCAL_PATH)/system/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
-    $(LOCAL_PATH)/system/lib/libcsc.so:system/lib/libcsc.so \
-    $(LOCAL_PATH)/system/lib64/libcsc.so:system/lib64/libcsc.so \
     $(LOCAL_PATH)/system/lib/libexynosgscaler.so:system/lib/libexynosgscaler.so \
     $(LOCAL_PATH)/system/lib64/libexynosgscaler.so:system/lib64/libexynosgscaler.so \
     $(LOCAL_PATH)/system/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
