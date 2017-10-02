@@ -339,13 +339,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/vendor/lib/libLifevibes_lvvetx.so:system/vendor/lib/libLifevibes_lvvetx.so \
     $(LOCAL_PATH)/system/vendor/lib/libLifevibes_lvverx.so:system/vendor/lib/libLifevibes_lvverx.so
 
-# OMX Core
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/lib/libExynosOMX_Core.so:system/lib/libExynosOMX_Core.so \
-    $(LOCAL_PATH)/system/lib/libExynosOMX_Resourcemanager.so:system/lib/libExynosOMX_Resourcemanager.so \
-    $(LOCAL_PATH)/system/lib64/libExynosOMX_Core.so:system/lib64/libExynosOMX_Core.so \
-    $(LOCAL_PATH)/system/lib64/libExynosOMX_Resourcemanager.so:system/lib64/libExynosOMX_Resourcemanager.so
-
 # OMX
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib/omx/libOMX.Exynos.AVC.Decoder.so:system/lib/omx/libOMX.Exynos.AVC.Decoder.so \
@@ -368,77 +361,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.VP8.Encoder.so:system/lib64/omx/libOMX.Exynos.VP8.Encoder.so \
     $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.VP9.Decoder.so:system/lib64/omx/libOMX.Exynos.VP9.Decoder.so \
     $(LOCAL_PATH)/system/lib64/omx/libOMX.Exynos.WMV.Decoder.so:system/lib64/omx/libOMX.Exynos.WMV.Decoder.so
-
-# SOMX
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/system/etc/somxreg.conf:system/etc/somxreg.conf \
-    $(LOCAL_PATH)/system/lib/libarac.so:system/lib/libarac.so \
-    $(LOCAL_PATH)/system/lib/libsavsac.so:system/lib/libsavsac.so \
-    $(LOCAL_PATH)/system/lib/libsavscmn.so:system/lib/libsavscmn.so \
-    $(LOCAL_PATH)/system/lib/libsavsff.so:system/lib/libsavsff.so \
-    $(LOCAL_PATH)/system/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
-    $(LOCAL_PATH)/system/lib/libsavsvc.so:system/lib/libsavsvc.so \
-    $(LOCAL_PATH)/system/lib/libsnaace.so:system/lib/libsnaace.so \
-    $(LOCAL_PATH)/system/lib/libsnamrnb.so:system/lib/libsnamrnb.so \
-    $(LOCAL_PATH)/system/lib/libsnamrwb.so:system/lib/libsnamrwb.so \
-    $(LOCAL_PATH)/system/lib/libsomx263dsw.so:system/lib/libsomx263dsw.so \
-    $(LOCAL_PATH)/system/lib/libsomx264dsw.so:system/lib/libsomx264dsw.so \
-    $(LOCAL_PATH)/system/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
-    $(LOCAL_PATH)/system/lib/libsomxaace.so:system/lib/libsomxaace.so \
-    $(LOCAL_PATH)/system/lib/libsomxadpcmd.so:system/lib/libsomxadpcmd.so \
-    $(LOCAL_PATH)/system/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
-    $(LOCAL_PATH)/system/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
-    $(LOCAL_PATH)/system/lib/libsomxcore.so:system/lib/libsomxcore.so \
-    $(LOCAL_PATH)/system/lib/libsomxevrcd.so:system/lib/libsomxevrcd.so \
-    $(LOCAL_PATH)/system/lib/libsomxevrce.so:system/lib/libsomxevrce.so \
-    $(LOCAL_PATH)/system/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
-    $(LOCAL_PATH)/system/lib/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
-    $(LOCAL_PATH)/system/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
-    $(LOCAL_PATH)/system/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
-    $(LOCAL_PATH)/system/lib/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
-    $(LOCAL_PATH)/system/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
-    $(LOCAL_PATH)/system/lib/libsomxqcelpd.so:system/lib/libsomxqcelpd.so \
-    $(LOCAL_PATH)/system/lib/libsomxqcelpe.so:system/lib/libsomxqcelpe.so \
-    $(LOCAL_PATH)/system/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
-    $(LOCAL_PATH)/system/lib/libsomxvc1dsw.so:system/lib/libsomxvc1dsw.so \
-    $(LOCAL_PATH)/system/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
-    $(LOCAL_PATH)/system/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
-    $(LOCAL_PATH)/system/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
-    $(LOCAL_PATH)/system/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
-    $(LOCAL_PATH)/system/lib64/libarac.so:system/lib64/libarac.so \
-    $(LOCAL_PATH)/system/lib64/libsavsac.so:system/lib64/libsavsac.so \
-    $(LOCAL_PATH)/system/lib64/libsavscmn.so:system/lib64/libsavscmn.so \
-    $(LOCAL_PATH)/system/lib64/libsavsff.so:system/lib64/libsavsff.so \
-    $(LOCAL_PATH)/system/lib64/libsavsmeta.so:system/lib64/libsavsmeta.so \
-    $(LOCAL_PATH)/system/lib64/libsavsvc.so:system/lib64/libsavsvc.so \
-    $(LOCAL_PATH)/system/lib64/libsnaace.so:system/lib64/libsnaace.so \
-    $(LOCAL_PATH)/system/lib64/libsnamrnb.so:system/lib64/libsnamrnb.so \
-    $(LOCAL_PATH)/system/lib64/libsnamrwb.so:system/lib64/libsnamrwb.so \
-    $(LOCAL_PATH)/system/lib64/libsomx263dsw.so:system/lib64/libsomx263dsw.so \
-    $(LOCAL_PATH)/system/lib64/libsomx264dsw.so:system/lib64/libsomx264dsw.so \
-    $(LOCAL_PATH)/system/lib64/libsomxaacd.so:system/lib64/libsomxaacd.so \
-    $(LOCAL_PATH)/system/lib64/libsomxaace.so:system/lib64/libsomxaace.so \
-    $(LOCAL_PATH)/system/lib64/libsomxadpcmd.so:system/lib64/libsomxadpcmd.so \
-    $(LOCAL_PATH)/system/lib64/libsomxamrd.so:system/lib64/libsomxamrd.so \
-    $(LOCAL_PATH)/system/lib64/libsomxcmn.so:system/lib64/libsomxcmn.so \
-    $(LOCAL_PATH)/system/lib64/libsomxcore.so:system/lib64/libsomxcore.so \
-    $(LOCAL_PATH)/system/lib64/libsomxevrcd.so:system/lib64/libsomxevrcd.so \
-    $(LOCAL_PATH)/system/lib64/libsomxevrce.so:system/lib64/libsomxevrce.so \
-    $(LOCAL_PATH)/system/lib64/libsomxflacd.so:system/lib64/libsomxflacd.so \
-    $(LOCAL_PATH)/system/lib64/libsomxhevcdsw.so:system/lib64/libsomxhevcdsw.so \
-    $(LOCAL_PATH)/system/lib64/libsomxmp3d.so:system/lib64/libsomxmp3d.so \
-    $(LOCAL_PATH)/system/lib64/libsomxmp43d.so:system/lib64/libsomxmp43d.so \
-    $(LOCAL_PATH)/system/lib64/libsomxmp4vdsw.so:system/lib64/libsomxmp4vdsw.so \
-    $(LOCAL_PATH)/system/lib64/libsomxnaace.so:system/lib64/libsomxnaace.so \
-    $(LOCAL_PATH)/system/lib64/libsomxqcelpd.so:system/lib64/libsomxqcelpd.so \
-    $(LOCAL_PATH)/system/lib64/libsomxqcelpe.so:system/lib64/libsomxqcelpe.so \
-    $(LOCAL_PATH)/system/lib64/libsomxsr263d.so:system/lib64/libsomxsr263d.so \
-    $(LOCAL_PATH)/system/lib64/libsomxvc1dsw.so:system/lib64/libsomxvc1dsw.so \
-    $(LOCAL_PATH)/system/lib64/libsomxvp8d.so:system/lib64/libsomxvp8d.so \
-    $(LOCAL_PATH)/system/lib64/libsomxwmad.so:system/lib64/libsomxwmad.so \
-    $(LOCAL_PATH)/system/lib64/libsomxwmv7d.so:system/lib64/libsomxwmv7d.so \
-    $(LOCAL_PATH)/system/lib64/libsomxwmv8d.so:system/lib64/libsomxwmv8d.so \
-    $(LOCAL_PATH)/system/lib64/libsxqk.so:system/lib64/libsxqk.so
 
 # Radio
 PRODUCT_COPY_FILES += \
