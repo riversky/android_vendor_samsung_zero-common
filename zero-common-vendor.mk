@@ -18,5 +18,7 @@
 LOCAL_PATH := vendor/samsung/zero-common/proprietary
 
 LOCAL_VENDOR_FILES := $(shell find $(LOCAL_PATH) -type f | sed -n 's|^$(LOCAL_PATH)/||p')
-$(foreach VENDOR_FILE,$(LOCAL_VENDOR_FILES),\
-	$(eval PRODUCT_COPY_FILES += $(LOCAL_PATH)/$(VENDOR_FILE):$(VENDOR_FILE)))
+$(foreach vendor_file, $(LOCAL_VENDOR_FILES), \
+	$(if $(strip $(findstring $(vendor_file):$(vendor_file),$(PRODUCT_COPY_FILES))),\
+		$(NOOP),\
+		$(eval PRODUCT_COPY_FILES += $(LOCAL_PATH)/$(vendor_file):$(vendor_file))))
