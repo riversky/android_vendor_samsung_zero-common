@@ -15,10 +15,38 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := vendor/samsung/zero-common/proprietary
+define zero-find-vendor-blobs
+    $(foreach vendor_file, $(shell find $(1) -type f | sed -n 's|^$(1)/||p'), \
+    	$(if $(strip $(findstring $(vendor_file):$(vendor_file),$(PRODUCT_COPY_FILES))), \
+    		$(NOOP), \
+    		$(1)/$(vendor_file):$(vendor_file)))
+endef
 
-LOCAL_VENDOR_FILES := $(shell find $(LOCAL_PATH) -type f | sed -n 's|^$(LOCAL_PATH)/||p')
-$(foreach vendor_file, $(LOCAL_VENDOR_FILES), \
-	$(if $(strip $(findstring $(vendor_file):$(vendor_file),$(PRODUCT_COPY_FILES))),\
-		$(NOOP),\
-		$(eval PRODUCT_COPY_FILES += $(LOCAL_PATH)/$(vendor_file):$(vendor_file))))
+# Workaround for empty TARGET_DEVICE
+TARGET_DEVICE := $(__PRODUCT_TARGET_NAME)
+
+#
+# Blobs for SM-G92xF
+#
+ifneq ($(filter zerofltexx zeroltexx,$(TARGET_DEVICE)),)
+    PRODUCT_COPY_FILES += $(call zero-find-vendor-blobs,vendor/samsung/zero-common/devices/xx)
+endif
+
+#
+# Blobs for SM-G92xP
+#
+ifneq ($(filter zerofltespr zeroltespr,$(TARGET_DEVICE)),)
+    PRODUCT_COPY_FILES += $(call zero-find-vendor-blobs,vendor/samsung/zero-common/devices/spr)
+endif
+
+#
+# Blobs for non-SM-G92xP
+#
+ifeq ($(filter zerofltespr zeroltespr,$(TARGET_DEVICE)),)
+    PRODUCT_COPY_FILES += $(call zero-find-vendor-blobs,vendor/samsung/zero-common/devices/non-spr)
+endif
+
+#
+# Commons blobs
+#
+PRODUCT_COPY_FILES += $(call zero-find-vendor-blobs,vendor/samsung/zero-common/proprietary)
