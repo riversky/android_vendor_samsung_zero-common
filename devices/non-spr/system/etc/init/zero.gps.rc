@@ -40,6 +40,7 @@ service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     class main
     user gps
     group system wakelock inet net_raw
+    seclabel u:r:gpsd:s0
     disabled
 
 on property:init.svc.bootanim=stopped
