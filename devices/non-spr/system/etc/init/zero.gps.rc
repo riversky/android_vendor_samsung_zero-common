@@ -37,11 +37,6 @@ service lhd /system/bin/lhd /system/etc/lhd.conf
 
 # GPS
 service gpsd /system/bin/gpsd -c /system/etc/gps.xml
-    class main
-    user gps
-    group system wakelock inet net_raw
-    disabled
-
-on property:init.svc.bootanim=stopped
-    # start gpsd late to prevent it from changing /data/system
-    start gpsd
+    class late_start
+    user system
+    group system
