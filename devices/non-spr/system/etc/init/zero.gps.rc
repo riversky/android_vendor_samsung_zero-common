@@ -42,4 +42,4 @@ service lhd /system/bin/lhd /system/etc/lhd.conf
 service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     class late_start
     user system
-    group system
+    group system wakelock inet net_raw
