@@ -92,8 +92,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib64/libexynoscamera3.so:system/lib64/libexynoscamera3.so \
     $(LOCAL_PATH)/system/lib/libexynoscamera.so:system/lib/libexynoscamera.so \
     $(LOCAL_PATH)/system/lib64/libexynoscamera.so:system/lib64/libexynoscamera.so \
-    $(LOCAL_PATH)/system/lib/libexynosv4l2.so:system/lib/libexynosv4l2.so \
-    $(LOCAL_PATH)/system/lib64/libexynosv4l2.so:system/lib64/libexynosv4l2.so \
     $(LOCAL_PATH)/system/lib/libhwjpeg.so:system/lib/libhwjpeg.so \
     $(LOCAL_PATH)/system/lib64/libhwjpeg.so:system/lib64/libhwjpeg.so \
     $(LOCAL_PATH)/system/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
@@ -103,12 +101,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib64/libsensorlistener.so:system/lib64/libsensorlistener.so \
     $(LOCAL_PATH)/system/lib/libuniplugin.so:system/lib/libuniplugin.so \
     $(LOCAL_PATH)/system/lib64/libuniplugin.so:system/lib64/libuniplugin.so \
-    $(LOCAL_PATH)/system/lib/libcsc.so:system/lib/libcsc.so \
-    $(LOCAL_PATH)/system/lib64/libcsc.so:system/lib64/libcsc.so \
-    $(LOCAL_PATH)/system/lib/libexynosgscaler.so:system/lib/libexynosgscaler.so \
-    $(LOCAL_PATH)/system/lib64/libexynosgscaler.so:system/lib64/libexynosgscaler.so \
-    $(LOCAL_PATH)/system/lib/libexynosscaler.so:system/lib/libexynosscaler.so \
-    $(LOCAL_PATH)/system/lib64/libexynosscaler.so:system/lib64/libexynosscaler.so \
     $(LOCAL_PATH)/system/lib64/libagc_max.so:system/lib64/libagc_max.so \
     $(LOCAL_PATH)/system/lib64/libmaxflicker.so:system/lib64/libmaxflicker.so \
     $(LOCAL_PATH)/system/lib64/libsdid.so:system/lib64/libsdid.so
