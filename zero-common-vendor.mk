@@ -152,10 +152,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/system/lib/libvulkan.so:system/lib/libvulkan.so \
     $(LOCAL_PATH)/system/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     $(LOCAL_PATH)/system/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-    $(LOCAL_PATH)/system/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
     $(LOCAL_PATH)/system/lib64/libvulkan.so:system/lib64/libvulkan.so \
     $(LOCAL_PATH)/system/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
-    $(LOCAL_PATH)/system/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
     $(LOCAL_PATH)/system/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     $(LOCAL_PATH)/system/vendor/lib/libOpenCv.so:system/vendor/lib/libOpenCv.so \
     $(LOCAL_PATH)/system/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
